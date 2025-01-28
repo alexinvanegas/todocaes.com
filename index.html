@@ -3,64 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction - www.todocaes.com</title>
+    <meta name="description" content="Noticias de tráfico en Fraijanes, San José Pinula, Santa Catarina Pinula y áreas aledañas">
+    <title>Noticias de Tráfico | Todo CAES</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
-        body {
+        :root {
+            --primary-color: #007BFF;
+            --text-color: #333;
+            --background-color: #f8f9fa;
+        }
+
+        * {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            color: #333;
+            padding: 1rem;
         }
 
         .container {
-            text-align: center;
-            background: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            font-size: 2.5em;
-            color: #333;
-        }
-
-        p {
-            font-size: 1.2em;
-            margin: 20px 0;
-            color: #555;
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            max-width: 600px;
+            width: 100%;
+            margin: 2rem auto;
         }
 
         .logo {
-            font-size: 1.5em;
-            color: #007BFF;
-            margin-bottom: 20px;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo img {
+            width: 180px;
+            height: auto;
+            aspect-ratio: 200/250;
+            object-fit: contain;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .content {
+            margin: 1.5rem 0;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .telegram {
+            background: #0088cc;
+            color: white;
+        }
+
+        .whatsapp {
+            background: #25d366;
+            color: white;
         }
 
         footer {
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #aaa;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #666;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.75rem;
+            }
+            
+            .social-link {
+                width: 100%;
+                justify-content: center;
+            }
         }
     </style>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="logo"><img alt="Todo CAES" src="logoTodoCAES.png" width="200" height="250" /></div>
+    <main class="container">
+        <div class="logo">
+            <img src="logoTodoCAES.png" alt="Logo Todo CAES" loading="lazy">
+        </div>
+        
         <h1>Noticias de Tráfico</h1>
-        <p>Fraijanes, San José Pinula, Santa Catarina Pinula, Carretera a El Salvador y Aledaños </p>
-            <p>Únete a nuestros Grupos de </p>
-			<p><a href="https://t.me/TodoCAESGT" target="_blank"><i class="material-icons">telegram</i>Telegram</a> ó <a href="https://chat.whatsapp.com/DZfXaLSor93LeBoveJvzhr" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>.</p>
-			<footer>&copy; 2024 www.todocaes.com. Todos los derechos reservados.</footer>
-    </div>
-<div class="player-page"><div><div class="player-logo"><img id="logo" src="https://www.googleapis.com/download/storage/v1/b/garfenter-user-papiro/o/L2FwcGhvc3RpbmdfcHJvZC9ibG9icy9BRW5CMlVycy1xVlZmNlpqOVpiU0dxQzVsZ0d4UmNra2lJMmsyZlVOZlR5eWtiSFgxZGhXTzItUDJDT1dDT2ZVLW5yQXhUTVBnbGFCNmRtVERUeGhXLVVVUkNkVVExNG4yQS5sVGM2cHdzV3hIdEg2NFNN?alt=media" alt="Logos..."></div><div class="youtube-player" style="z-index: 1;"><span><iframe frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Lil Pump - Gucci Gang [Official Music Video]" width="1920" height="1080" src="https://www.youtube.com/embed/null?autoplay=1&amp;showinfo=0&amp;controls=0&amp;rel=0&amp;iv_load_policy=3&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fponmusica.com&amp;widgetid=1" id="undefined" class="undefined"></iframe></span></div><div class="youtube-player" style="z-index: 0;"><span><iframe frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="YouTube video player" width="1920" height="1080" src="https://www.youtube.com/embed/null?autoplay=1&amp;showinfo=0&amp;controls=0&amp;rel=0&amp;iv_load_policy=3&amp;start=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fponmusica.com&amp;widgetid=3" id="undefined" class="undefined"></iframe></span></div><div id="popup-ad"><div id="popup-container"><table id="song-info-table"><tbody><tr><td id="left-padding"></td><td id="info-image"><img id="image" src="https://i.scdn.co/image/206bc9b61d06a2397741b60557f63949c0a2ce1d" alt="Album"></td><td id="info"><div id="info-artist"><div id="info-artist-container"><span id="artist"> Lil Pump</span></div></div><div id="info-artist-title"><span id="title">Gucci Gang</span></div></td><td id="information-section"><div id="container-use-ponmusica"><div id="container-use-ponmusica-title"><div>Elige en ponmusica.com</div></div><div id="container-use-ponmusica-code"><span>Código:</span><span id="txt-code">&nbsp; hs10y</span></div></div></td><td id="right-padding"></td></tr></tbody></table></div></div></div></div>
+        
+        <div class="content">
+            <p>Información actualizada sobre el tráfico en:</p>
+            <p>Fraijanes, San José Pinula, Santa Catarina Pinula,<br>Carretera a El Salvador y áreas aledañas</p>
+        </div>
 
+        <div class="social-links">
+            <a href="https://t.me/TodoCAESGT" class="social-link telegram" target="_blank" rel="noopener">
+                <i class="fab fa-telegram-plane"></i>
+                Telegram
+            </a>
+            
+            <a href="https://chat.whatsapp.com/DZfXaLSor93LeBoveJvzhr" class="social-link whatsapp" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i>
+                WhatsApp
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        &copy; <span id="current-year">2025</span> www.todocaes.com - Todos los derechos reservados
+    </footer>
+
+    <script>
+        // Actualizar año automáticamente
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
