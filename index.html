@@ -21,6 +21,72 @@
             box-sizing: border-box;
         }
 
+        /* Estilos del menú */
+        .nav-container {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: var(--text-color);
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .menu a:hover {
+            color: var(--primary-color);
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            min-width: 200px;
+        }
+
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        .submenu li {
+            padding: 0.5rem;
+        }
+
+        .submenu a {
+            color: #666;
+            display: block;
+        }
+
+        .submenu a:hover {
+            background: #f8f9fa;
+        }
+
         body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             line-height: 1.6;
@@ -32,6 +98,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            padding-top: 60px; /* Espacio para el menú fijo */
         }
 
         .container {
@@ -111,6 +178,21 @@
         }
 
         @media (max-width: 480px) {
+            .menu {
+                flex-direction: column;
+                gap: 0;
+                text-align: center;
+            }
+            
+            .menu li {
+                width: 100%;
+            }
+            
+            .submenu {
+                position: static;
+                box-shadow: none;
+            }
+            
             .container {
                 padding: 1.5rem;
             }
@@ -127,6 +209,22 @@
     </style>
 </head>
 <body>
+    <div class="nav-container">
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li>
+                    <a href="#servicios">Servicios ▼</a>
+                    <ul class="submenu">
+                        <li><a href="#emergencia">Teléfonos de Emergencia</a></li>
+                        <li><a href="#pinchazos">Ubicación de Pinchazos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <main class="container">
         <div class="logo">
             <img src="logoTodoCAES.png" alt="Logo Todo CAES" loading="lazy">
