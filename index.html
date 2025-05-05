@@ -1,272 +1,274 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Noticias de tráfico en Fraijanes, San José Pinula, Santa Catarina Pinula y áreas aledañas">
-    <title>Noticias de Tráfico | Todo CAES</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Noticias de tráfico en Fraijanes, San José Pinula, Santa Catarina Pinula y áreas aledañas">
+<title>Noticias de Tráfico | Todo CAES</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-      <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1XXRB4FZG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1XXRB4FZG"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-    gtag('config', 'G-K1XXRB4FZG');
-  </script>
-    <style>
-        :root {
-            --primary-color: #007BFF;
-            --text-color: #333;
-            --background-color: #f8f9fa;
-        }
+gtag('config', 'G-K1XXRB4FZG');
+</script>
+<style>
+:root {
+--primary-color: #007BFF;
+--text-color: #333;
+--background-color: #f8f9fa;
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
-        /* Estilos del menú */
-        .nav-container {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
+/* Estilos del menú */
+.nav-container {
+position: fixed;
+top: 0;
+width: 100%;
+background: white;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+z-index: 1000;
+}
 
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem;
-        }
+nav {
+max-width: 1200px;
+margin: 0 auto;
+padding: 1rem;
+}
 
-        .menu {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
+.menu {
+list-style: none;
+display: flex;
+justify-content: center;
+gap: 2rem;
+}
 
-        .menu li {
-            position: relative;
-        }
+.menu li {
+position: relative;
+}
 
-        .menu a {
-            text-decoration: none;
-            color: var(--text-color);
-            padding: 0.5rem 1rem;
-            transition: color 0.3s ease;
-        }
+.menu a {
+text-decoration: none;
+color: var(--text-color);
+padding: 0.5rem 1rem;
+transition: color 0.3s ease;
+}
 
-        .menu a:hover {
-            color: var(--primary-color);
-        }
+.menu a:hover {
+color: var(--primary-color);
+}
 
-        .submenu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: white;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 4px;
-            min-width: 200px;
-        }
+.submenu {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background: white;
+box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+border-radius: 4px;
+min-width: 200px;
+}
 
-        .menu li:hover .submenu {
-            display: block;
-        }
+.menu li:hover .submenu {
+display: block;
+}
 
-        .submenu li {
-            padding: 0.5rem;
-        }
+.submenu li {
+padding: 0.5rem;
+}
 
-        .submenu a {
-            color: #666;
-            display: block;
-        }
+.submenu a {
+color: #666;
+display: block;
+}
 
-        .submenu a:hover {
-            background: #f8f9fa;
-        }
+.submenu a:hover {
+background: #f8f9fa;
+}
 
-        body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding-top: 60px; /* Espacio para el menú fijo */
-        }
+body {
+font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+line-height: 1.6;
+background-color: var(--background-color);
+color: var(--text-color);
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding-top: 60px; /* Espacio para el menú fijo */
+}
 
-        .container {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            max-width: 600px;
-            width: 95%;
-            margin: 1rem;
-        }
+.container {
+background: white;
+padding: 2.5rem;
+border-radius: 12px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+max-width: 600px;
+width: 95%;
+margin: 1rem;
+}
 
-        .logo {
-            margin-bottom: 1.5rem;
-        }
+.logo {
+margin-bottom: 1.5rem;
+}
 
-        .logo img {
-            width: 180px;
-            height: auto;
-            aspect-ratio: 200/250;
-            object-fit: contain;
-            margin: 0 auto;
-            display: block;
-        }
+.logo img {
+width: 180px;
+height: auto;
+aspect-ratio: 200/250;
+object-fit: contain;
+margin: 0 auto;
+display: block;
+}
 
-        h1 {
-            font-size: 2rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
+h1 {
+font-size: 2rem;
+color: var(--primary-color);
+margin-bottom: 1rem;
+}
 
-        .content {
-            margin: 1.5rem 0;
-        }
+.content {
+margin: 1.5rem 0;
+}
 
-        .social-links {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 2rem 0;
-        }
+.social-links {
+display: flex;
+gap: 1rem;
+justify-content: center;
+flex-wrap: wrap;
+margin: 2rem 0;
+}
 
-        .social-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: transform 0.2s ease, opacity 0.2s ease;
-        }
+.social-link {
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+padding: 0.75rem 1.5rem;
+border-radius: 8px;
+text-decoration: none;
+transition: transform 0.2s ease, opacity 0.2s ease;
+}
 
-        .social-link:hover {
-            transform: translateY(-2px);
-            opacity: 0.9;
-        }
+.social-link:hover {
+transform: translateY(-2px);
+opacity: 0.9;
+}
 
-        .telegram {
-            background: #0088cc;
-            color: white;
-        }
+.telegram {
+background: #0088cc;
+color: white;
+}
 
-        .whatsapp {
-            background: #25d366;
-            color: white;
-        }
+.whatsapp {
+background: #25d366;
+color: white;
+}
 
-        footer {
-            text-align: center;
-            font-size: 0.875rem;
-            color: #666;
-            margin-top: 1rem;
-            width: 100%;
-            max-width: 600px;
-            padding: 0 1rem;
-        }
+footer {
+text-align: center;
+font-size: 0.875rem;
+color: #666;
+margin-top: 1rem;
+width: 100%;
+max-width: 600px;
+padding: 0 1rem;
+}
 
-        @media (max-width: 480px) {
-            .menu {
-                flex-direction: column;
-                gap: 0;
-                text-align: center;
-            }
-            
-            .menu li {
-                width: 100%;
-            }
-            
-            .submenu {
-                position: static;
-                box-shadow: none;
-            }
-            
-            .container {
-                padding: 1.5rem;
-            }
-            
-            h1 {
-                font-size: 1.75rem;
-            }
-            
-            .social-link {
-                width: 100%;
-                justify-content: center;
-            }
-        }
-    </style>
-</head>
+@media (max-width: 480px) {
+.menu {
+flex-direction: column;
+gap: 0;
+text-align: center;
+}
+
+.menu li {
+width: 100%;
+}
+
+.submenu {
+position: static;
+box-shadow: none;
+}
+
+.container {
+padding: 1.5rem;
+}
+
+h1 {
+font-size: 1.75rem;
+}
+
+.social-link {
+width: 100%;
+justify-content: center;
+}
+}
+</style></head>
 <body>
-    <div class="nav-container">
-        <nav>
-            <ul class="menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li>
-                    <a href="#servicios">Servicios ▼</a>
-                    <ul class="submenu">
-                        <li><a href="#emergencia">Teléfonos de Emergencia</a></li>
-                        <li><a href="#pinchazos">Ubicación de Pinchazos</a></li>
-                    </ul>
-                </li>
-                <li><a href="#contacto">Contáctanos</a></li>
-            </ul>
-        </nav>
-    </div>
+<div class="nav-container">
+<nav>
+<ul class="menu">
+<li><a href="#inicio">Inicio</a></li>
+<li>
+<a href="#servicios">Servicios ▼</a>
+<ul class="submenu">
+<li><a href="#emergencia">Teléfonos de Emergencia</a></li>
+<li><a href="#pinchazos">Ubicación de Pinchazos</a></li>
+</ul>
+</li>
+<li><a href="#contacto">Contáctanos</a></li>
+</ul>
+</nav>
+</div>
 
-    <main class="container">
-        <div class="logo">
-            <img src="logoTodoCAES.png" alt="Logo Todo CAES" loading="lazy">
-        </div>
-        
-        <h1>Noticias de Tráfico</h1>
-        
-        <div class="content">
-            <p>Información actualizada sobre el tráfico en:</p>
-            <p>Fraijanes, San José Pinula, Santa Catarina Pinula,<br>Carretera a El Salvador y áreas aledañas</p>
-        </div>
+<main class="container">
+<div class="logo">
+<img src="logoTodoCAES.png" alt="Logo Todo CAES" loading="lazy">
+</div>
 
-        <div class="social-links">
-            <a href="https://t.me/TodoCAESGT" class="social-link telegram" target="_blank" rel="noopener">
-                <i class="fab fa-telegram-plane"></i>
-                Telegram
-            </a>
-            
-            <a href="https://chat.whatsapp.com/DZfXaLSor93LeBoveJvzhr" class="social-link whatsapp" target="_blank" rel="noopener">
-                <i class="fab fa-whatsapp"></i>
-                WhatsApp
-            </a>
-        </div>
-    </main>
+<h1>Noticias de Tráfico</h1>
 
-    <footer>
-        &copy; <span id="current-year">2024</span> www.todocaes.com - Todos los derechos reservados
-    </footer>
+<div class="content">
+<p>Información actualizada sobre el tráfico en:</p>
+<p>Fraijanes, San José Pinula, Santa Catarina Pinula,<br>Carretera a El Salvador y áreas aledañas</p>
+</div>
 
-    <script>
-        // Actualizar año automáticamente
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
-</body>
+<div class="social-links">
+<a href="https://t.me/TodoCAESGT" class="social-link telegram" target="_blank" rel="noopener">
+<i class="fab fa-telegram-plane"></i>
+Telegram
+</a>
+
+<a href="https://chat.whatsapp.com/DZfXaLSor93LeBoveJvzhr" class="social-link whatsapp" target="_blank" rel="noopener">
+<i class="fab fa-whatsapp"></i>
+WhatsApp
+</a>
+
+<a href='https://ko-fi.com/M4M51E5PGR' target='_blank' class="social-link" style="background:#FF5F5F;color:white;">
+<img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+Apóyanos
+</a>
+</div>
+</main>
+
+<footer>
+&copy; <span id="current-year">2024</span> www.todocaes.com - Todos los derechos reservados
+</footer>
+
+<script>
+// Actualizar año automáticamente
+document.getElementById('current-year').textContent = new Date().getFullYear();
+</script></body>
 </html>
